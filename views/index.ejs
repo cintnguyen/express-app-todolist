@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>previous-express-todolist</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>To Do List</h1>
+
+  <form action="/tasks" method="POST">
+    <input type="text" placeholder="task" name="taskName">
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Tasks</h3>
+  <ul class="">
+  <% for(var i=0; i<tasks.length; i++) {%>
+    <li class="allTaskItems">
+      <span id="<%= tasks[i]._id %>"  class="taskItem <%= tasks[i].complete ? 'complete': '' %>" ><%= tasks[i].taskName %></span>
+
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <h2 class="total"><%= tasks.length - tasks.reduce((acc,task) => task.complete ? acc+1 : acc,0) %></h2>
+
+  <section>
+      <button class="clear">Clear</button>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
