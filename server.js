@@ -7,7 +7,7 @@ const ObjectID = require('mongodb').ObjectID
 var db, collection;
 
 const url = "mongodb+srv://cintnguyen98:mongodb613@cluster0.x0ntbdd.mongodb.net/?retryWrites=true&w=majority";
-const dbName = "personalexpress";
+const dbName = "todolistdb";
 
 app.listen(3000, () => {
   MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
