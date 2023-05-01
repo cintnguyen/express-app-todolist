@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
 }
 
 h3{
@@ -9,4 +10,26 @@ h3{
 
 .complete{
   text-decoration: 2px solid line-through black;
+}
+
+.whole{
+  background:#C9BDAE;
+  color:white;
+  margin:100px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  min-height:80vh;
+  box-shadow:10px 10px 5px gray;
+}
+
+body{
+  background:url(backgroundTwo.png) no-repeat;
+  background-size:cover;
+  min-height:100vh;
+  margin:0;
+}
+
+h1{
+  border-bottom:1px solid white;
 }
