@@ -13,14 +13,15 @@ h3{
 }
 
 .whole{
-  background:#C9BDAE;
+  background:rgb(106, 129, 73);
   color:white;
   margin:100px;
   display:flex;
   flex-direction: column;
   align-items:center;
   min-height:80vh;
-  box-shadow:10px 10px 5px gray;
+  box-shadow:15px 15px 5px lightgray;
+  width:35%;
 }
 
 body{
@@ -28,8 +29,21 @@ body{
   background-size:cover;
   min-height:100vh;
   margin:0;
+  display:flex;
+  justify-content:center;
 }
 
 h1{
   border-bottom:1px solid white;
+}
+
+button{
+  background:transparent;
+  color:white;
+  box-shadow: 3px 3px 2px;
+  border:white 1px solid;
+}
+
+button:active{
+  transform: translateY(4px);
 }
