@@ -9,7 +9,7 @@ var db, collection;
 const url = "mongodb+srv://cintnguyen98:mongodb613@cluster0.x0ntbdd.mongodb.net/?retryWrites=true&w=majority";
 const dbName = "todolistdb";
 
-app.listen(3000, () => {
+app.listen(5000, () => {
   MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
     if (error) {
       throw error;
